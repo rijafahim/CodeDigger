@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane prefHeight="1607.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.CodeDiggerHomeController">
+   <content>
+      <AnchorPane prefHeight="1567.0" prefWidth="434.0" style="-fx-background-color: #171717;">
+         <children>
+            <JFXTabPane fx:id="mainPane" layoutX="1.0" layoutY="33.0" prefHeight="1571.0" prefWidth="433.0">
+               <tabs>
+                  <Tab fx:id="codeSearch" text="Code Search">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="nextQuery_Search" layoutX="40.0" layoutY="35.0" prefHeight="10.0" prefWidth="9.0" text="Button" />
+                              <JFXButton fx:id="previousQuery_Search" layoutX="2.0" layoutY="35.0" prefHeight="2.0" prefWidth="0.0" />
+                              <JFXTextField fx:id="codeSearchArea" layoutX="74.0" layoutY="23.0" maxWidth="327.0" minWidth="257.0" prefHeight="37.0" prefWidth="286.0" promptText="Use your IDE or type here..." style="-fx-background-color: white;" unFocusColor="#797979">
+                                 <font>
+                                    <Font name="Segoe UI Semibold" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </JFXTextField>
+                            <AnchorPane fx:id="codeView" layoutX="-6.0" layoutY="87.0" minHeight="0.0" minWidth="0.0" prefHeight="1448.0" prefWidth="433.0" />
+                              <JFXButton fx:id="errorLookup" layoutX="381.0" layoutY="29.0" prefHeight="25.0" prefWidth="8.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="myCodeDigger" text="My Code Digger">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

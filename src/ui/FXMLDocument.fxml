@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ac_pain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="791.0" prefWidth="1287.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="179.0" layoutY="690.0" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="144.0" text="Next Snippet" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font></Button>
+      <VBox fx:id="vbox" layoutX="-2.0" layoutY="58.0" maxHeight="684.0" minHeight="594.0" prefHeight="594.0" prefWidth="1022.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></VBox>
+      <Button fx:id="prev_btn" layoutX="18.0" layoutY="690.0" onAction="#prevSnippet" prefHeight="60.0" prefWidth="144.0" text="Previous Snippet">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font></Button>
+      <ListView fx:id="excpListView" layoutX="1018.0" layoutY="58.0" prefHeight="599.0" prefWidth="269.0" />
+      <Button fx:id="exit_button1" layoutX="1115.0" layoutY="690.0" onAction="#exit" prefHeight="60.0" prefWidth="144.0" text="Exit" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Button>
+      <MenuBar layoutX="-1.0" layoutY="-1.0" prefHeight="25.0" prefWidth="1287.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="addressbar" layoutX="-3.0" layoutY="24.0" prefHeight="32.0" prefWidth="1022.0" />
+      <TextField fx:id="ex_list" layoutX="1020.0" layoutY="24.0" prefHeight="32.0" prefWidth="269.0" />
+    </children>
+</AnchorPane>

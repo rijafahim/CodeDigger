@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="mainScene" prefHeight="1474.0" prefWidth="443.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.SearchViewController">
+   <children>
+      <Pane fx:id="box1" layoutX="22.0" layoutY="91.0" prefHeight="268.0" prefWidth="400.0" visible="false">
+         <children>
+            <SplitPane layoutX="4.0" layoutY="50.0" orientation="VERTICAL" prefHeight="169.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <items>
+                  <AnchorPane fx:id="snippet1" layoutX="16.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="394.0" style="-fx-background-color: #2E2E2E;">
+                     <children>
+                        <Text fx:id="codeContent1" fill="#f2e2e2" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Courier New" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </items>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </SplitPane>
+            <AnchorPane layoutX="4.0" layoutY="222.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <children>
+                  <Separator layoutY="2.0" opacity="0.07" prefHeight="6.0" prefWidth="390.0" style="-fx-background-color: black;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Separator>
+                  <JFXButton fx:id="viewButton1" layoutX="39.0" layoutY="9.0" prefHeight="25.0" prefWidth="14.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="copyButton1" layoutX="4.0" layoutY="9.0" onAction="#copySnippet1" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <JFXButton fx:id="noButton1" layoutX="363.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="yesButton1" layoutX="330.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <Text fill="#b9b6b6" layoutX="198.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is this snippet helpful?">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="6.0" prefHeight="40.0" prefWidth="390.0">
+               <children>
+                  <Text fx:id="title1" fill="#e1dcdc" layoutX="55.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="badge1" fitHeight="33.0" fitWidth="36.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="box2" layoutX="22.0" layoutY="373.0" prefHeight="268.0" prefWidth="400.0" visible="false">
+         <children>
+            <SplitPane layoutX="4.0" layoutY="50.0" orientation="VERTICAL" prefHeight="169.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <items>
+                  <AnchorPane fx:id="snippet2" layoutX="16.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="394.0" style="-fx-background-color: #2E2E2E;">
+                     <children>
+                        <Text fx:id="codeContent2" fill="#f2e2e2" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Courier New" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <AnchorPane layoutX="4.0" layoutY="222.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <children>
+                  <Separator layoutY="2.0" opacity="0.07" prefHeight="6.0" prefWidth="390.0" style="-fx-background-color: black;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Separator>
+                  <JFXButton fx:id="viewButton2" layoutX="39.0" layoutY="9.0" prefHeight="25.0" prefWidth="11.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="copyButton2" layoutX="4.0" layoutY="9.0" onAction="#copySnippet2" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <JFXButton fx:id="noButton2" layoutX="363.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="yesButton2" layoutX="330.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <Text fill="#b9b6b6" layoutX="198.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is this snippet helpful?">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="6.0" prefHeight="40.0" prefWidth="390.0">
+               <children>
+                  <Text fx:id="title2" fill="#e1dcdc" layoutX="55.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="badge2" fitHeight="33.0" fitWidth="36.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="box3" layoutX="19.0" layoutY="664.0" prefHeight="268.0" prefWidth="400.0" visible="false">
+         <children>
+            <SplitPane layoutX="4.0" layoutY="50.0" orientation="VERTICAL" prefHeight="169.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <items>
+                  <AnchorPane fx:id="snippet3" layoutX="16.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="394.0" style="-fx-background-color: #2E2E2E;">
+                     <children>
+                        <Text fx:id="codeContent3" fill="#f2e2e2" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Courier New" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <AnchorPane layoutX="4.0" layoutY="222.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <children>
+                  <Separator layoutY="2.0" opacity="0.07" prefHeight="6.0" prefWidth="390.0" style="-fx-background-color: black;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Separator>
+                  <JFXButton fx:id="viewButton3" layoutX="39.0" layoutY="9.0" prefHeight="25.0" prefWidth="9.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="copyButton3" layoutX="4.0" layoutY="9.0" onAction="#copySnippet3" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <JFXButton fx:id="noButton3" layoutX="363.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="yesButton3" layoutX="330.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <Text fill="#b9b6b6" layoutX="198.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is this snippet helpful?">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="6.0" prefHeight="40.0" prefWidth="390.0">
+               <children>
+                  <Text fx:id="title3" fill="#e1dcdc" layoutX="55.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="badge3" fitHeight="33.0" fitWidth="36.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="box4" layoutX="19.0" layoutY="932.0" prefHeight="286.0" prefWidth="400.0" visible="false">
+         <children>
+            <SplitPane layoutX="4.0" layoutY="50.0" orientation="VERTICAL" prefHeight="169.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <items>
+                  <AnchorPane fx:id="snippet4" layoutX="16.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="394.0" style="-fx-background-color: #2E2E2E;">
+                     <children>
+                        <Text fx:id="codeContent4" fill="#f2e2e2" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Courier New" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <AnchorPane layoutX="4.0" layoutY="222.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <children>
+                  <Separator layoutY="2.0" opacity="0.07" prefHeight="6.0" prefWidth="390.0" style="-fx-background-color: black;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Separator>
+                  <JFXButton fx:id="viewButton4" layoutX="39.0" layoutY="9.0" prefHeight="25.0" prefWidth="0.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="copyButton4" layoutX="4.0" layoutY="9.0" onAction="#copySnippet4" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <JFXButton fx:id="noButton4" layoutX="363.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="yesButton4" layoutX="330.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <Text fill="#b9b6b6" layoutX="198.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is this snippet helpful?">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="6.0" prefHeight="40.0" prefWidth="390.0">
+               <children>
+                  <Text fx:id="title4" fill="#e1dcdc" layoutX="55.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="badge4" fitHeight="33.0" fitWidth="36.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="box5" layoutX="19.0" layoutY="1204.0" prefHeight="256.0" prefWidth="400.0" visible="false">
+         <children>
+            <SplitPane layoutX="4.0" layoutY="50.0" orientation="VERTICAL" prefHeight="169.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <items>
+                  <AnchorPane fx:id="snippet5" layoutX="16.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="394.0" style="-fx-background-color: #2E2E2E;">
+                     <children>
+                        <Text fx:id="codeContent5" fill="#f2e2e2" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Courier New" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <AnchorPane layoutX="4.0" layoutY="222.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-color: #171717;">
+               <children>
+                  <Separator layoutY="2.0" opacity="0.07" prefHeight="6.0" prefWidth="390.0" style="-fx-background-color: black;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Separator>
+                  <JFXButton fx:id="viewButton5" layoutX="39.0" layoutY="9.0" prefHeight="25.0" prefWidth="2.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="copyButton5" layoutX="4.0" layoutY="9.0" onAction="#copySnippet5" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <JFXButton fx:id="noButton5" layoutX="363.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" text="Button" />
+                  <JFXButton fx:id="yesButton5" layoutX="330.0" layoutY="8.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #2E2E2E;" />
+                  <Text fill="#b9b6b6" layoutX="198.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is this snippet helpful?">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="6.0" prefHeight="40.0" prefWidth="390.0">
+               <children>
+                  <Text fx:id="title5" fill="#e1dcdc" layoutX="55.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="badge5" fitHeight="33.0" fitWidth="36.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <JFXSpinner fx:id="loader" layoutX="206.0" layoutY="134.0" />
+      <TilePane fx:id="bar" alignment="CENTER" layoutX="5.0" layoutY="4.0" prefHeight="71.0" prefWidth="432.0" />
+      <AnchorPane fx:id="errorSearchView" layoutX="22.0" layoutY="40.0" prefHeight="1410.0" prefWidth="400.0" style="-fx-background-color: #171717;" visible="false">
+         <children>
+            <TreeView fx:id="treeView" layoutX="3.0" layoutY="6.0" prefHeight="1400.0" prefWidth="390.0" style="-fx-background-color: #171717;" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

@@ -1,0 +1,6 @@
+Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+	Type mismatch: cannot convert from String to int
+	asd cannot be resolved to a variable
+	The type of the expression must be an array type but it resolved to Object
+
+	at Sample.main(Sample.java:6)

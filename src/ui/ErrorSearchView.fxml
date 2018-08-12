@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="errorSearchVew" prefHeight="1404.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ErrorSearchViewController">
+   <children>
+      <TreeView fx:id="treeView" layoutX="4.0" layoutY="4.0" prefHeight="1400.0" prefWidth="390.0" style="-fx-background-color: #171717;" />
+   </children>
+</AnchorPane>
